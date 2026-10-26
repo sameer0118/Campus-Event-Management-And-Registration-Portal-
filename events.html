@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusConnect - Events</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: whitesmoke;
+            margin: 0;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .login-button {
+            background-color: orange;
+            color: black;
+            padding: 8px;
+        }
+
+        .intro {
+            background-color: lightblue;
+            padding: 25px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: navy;
+        }
+
+        .event-card {
+            background-color: white;
+            border: 1px solid gray;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        .seats {
+            color: green;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .notice {
+            background-color: lightyellow;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CampusConnect</h1>
+        <p>Campus Event Management Portal</p>
+
+        <nav>
+            <a href="student.html">Home</a>
+            <a href="events.html">Explore Events</a>
+            <a href="register.html">My Registrations</a>
+            <a href="organizer.html" class="login-button">Organizer Login</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Explore Campus Events</h2>
+        <p>Discover technical, cultural, and educational events.</p>
+    </section>
+
+    <div class="container">
+        <h2>Upcoming Events</h2>
+
+        <div class="event-card">
+            <h3>Tech Innovation Challenge</h3>
+            <p><b>Date:</b> 15 November 2026</p>
+            <p><b>Venue:</b> Block 32 Auditorium</p>
+            <p><b>Category:</b> Technical</p>
+            <p>Show your creativity and solve problems using technology.</p>
+            <p class="seats">Sample availability: 25 seats</p>
+
+            <a href="register.html?event=tech" class="button">
+                Register Now
+            </a>
+        </div>
+
+        <div class="event-card">
+            <h3>Rhythm &amp; Beats</h3>
+            <p><b>Date:</b> 18 November 2026</p>
+            <p><b>Venue:</b> Open Air Theatre</p>
+            <p><b>Category:</b> Cultural</p>
+            <p>Enjoy music, dance, and exciting cultural performances.</p>
+            <p class="seats">Sample availability: 40 seats</p>
+
+            <a href="register.html?event=cultural" class="button">
+                Register Now
+            </a>
+        </div>
+
+        <div class="event-card">
+            <h3>Web Development Workshop</h3>
+            <p><b>Date:</b> 22 November 2026</p>
+            <p><b>Venue:</b> Computer Lab 2</p>
+            <p><b>Category:</b> Workshop</p>
+            <p>Learn the basics of creating websites using HTML and CSS.</p>
+            <p class="seats">Sample availability: 5 seats</p>
+
+            <a href="register.html?event=workshop" class="button">
+                Register Now
+            </a>
+        </div>
+
+        <div class="notice">
+            <h3>Important Notice</h3>
+            <p>Event dates and seat availability are sample information
+            for this college project.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>CampusConnect | Explore and Participate</p>
+    </footer>
+
+</body>
+</html>
