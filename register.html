@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusConnect - Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: whitesmoke;
+            margin: 0;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .login-button {
+            background-color: orange;
+            color: black;
+            padding: 8px;
+        }
+
+        .intro {
+            background-color: lightblue;
+            padding: 25px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2, h3 {
+            color: navy;
+        }
+
+        .registration-form {
+            background-color: white;
+            border: 1px solid gray;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 90%;
+        }
+
+        .button {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .registration-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .registration-table th,
+        .registration-table td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .registration-table th {
+            background-color: navy;
+            color: white;
+        }
+
+        .status {
+            color: green;
+        }
+
+        .notice {
+            background-color: lightyellow;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CampusConnect</h1>
+        <p>Campus Event Management Portal</p>
+
+        <nav>
+            <a href="student.html">Home</a>
+            <a href="events.html">Explore Events</a>
+            <a href="register.html">My Registrations</a>
+            <a href="organizer.html" class="login-button">Organizer Login</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Event Registration</h2>
+        <p>Fill in your details to register for a campus event.</p>
+    </section>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+
+        <form class="registration-form" action="#" method="get">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="studentid">Student ID:</label>
+            <input type="text" id="studentid" name="studentid"
+                   placeholder="Enter your student ID" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number" required>
+
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+                <option value="">-- Select an Event --</option>
+                <option value="tech">Tech Innovation Challenge</option>
+                <option value="cultural">Rhythm &amp; Beats</option>
+                <option value="workshop">Web Development Workshop</option>
+            </select>
+
+            <br>
+            <button type="submit" class="button">
+                Submit Registration
+            </button>
+        </form>
+
+        <h2 id="my-registrations">My Registrations</h2>
+
+        <table class="registration-table">
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Tech Innovation Challenge</td>
+                <td>15 November 2026</td>
+                <td class="status">Sample</td>
+            </tr>
+
+            <tr>
+                <td>Rhythm &amp; Beats</td>
+                <td>18 November 2026</td>
+                <td class="status">Sample</td>
+            </tr>
+        </table>
+
+        <div class="notice">
+            <h3>Note</h3>
+            <p>This is an HTML and CSS prototype. The form checks
+            required fields, but it does not save registrations
+            or reserve seats.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>CampusConnect | Student Registration Portal</p>
+    </footer>
+
+</body>
+</html>
