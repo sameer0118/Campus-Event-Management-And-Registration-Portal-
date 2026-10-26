@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create New Event</title>
+  <link rel="stylesheet" href="organizer.css">
+</head>
+
+<body class="organizer">
+
+  <!-- Top menu -->
+  <div class="navbar">
+    <span>Organizer Panel</span>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="create-event.html">Create New Event</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <div class="container">
+
+    <h1>Create New Event</h1>
+
+    <div class="form-box">
+
+      <!-- Later, JavaScript will read these fields (using their ids),
+           save the event, and show it on the homepage and dashboard. -->
+      <form id="event-form" action="dashboard.html">
+
+        <label for="event-name">Event Name</label>
+        <input type="text" id="event-name" required>
+
+        <label for="event-type">Event Type</label>
+        <select id="event-type" required>
+          <option value="">-- Select --</option>
+          <option value="Fest">Fest</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Seminar">Seminar</option>
+          <option value="Competition">Competition</option>
+        </select>
+
+        <label for="seat-limit">Total Seats</label>
+        <input type="number" id="seat-limit" min="1" required>
+
+        <label for="event-date">Date</label>
+        <input type="date" id="event-date" required>
+
+        <label for="event-time">Time</label>
+        <input type="time" id="event-time" required>
+
+        <label for="event-venue">Venue</label>
+        <input type="text" id="event-venue" required>
+
+        <label for="event-eligibility">Eligibility</label>
+        <input type="text" id="event-eligibility">
+0vent-description"></textarea>
+
+        <button type="submit" class="btn">Create Event</button>
+
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>

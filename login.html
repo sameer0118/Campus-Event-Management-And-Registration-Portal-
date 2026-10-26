@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organizer Login</title>
+  <link rel="stylesheet" href="organizer.css">
+</head>
+
+<body class="organizer">
+
+  <div class="login-box">
+    <h1>Organizer Login</h1>
+
+    <!-- For now, clicking Login just opens dashboard.html.
+         Later, JavaScript will check the ID and password first. -->
+    <form id="login-form" action="dashboard.html">
+
+      <label for="organizer-id">Organizer ID</label>
+      <input type="text" id="organizer-id" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <!-- JavaScript will show this message if login fails -->
+      <p class="error-message" id="login-error">Wrong ID or password!</p>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>

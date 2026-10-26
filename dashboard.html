@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organizer Dashboard</title>
+  <link rel="stylesheet" href="organizer.css">
+</head>
+
+<body class="organizer">
+
+  <!-- Top menu -->
+  <div class="navbar">
+    <span>Organizer Panel</span>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="create-event.html">Create New Event</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <div class="container">
+
+    <h1>Dashboard</h1>
+
+    <!-- Summary boxes. The numbers are fixed for now.
+         Later, JavaScript will change them using the id. -->
+    <div class="card">
+      <h3>Total Events</h3>
+      <p id="total-events">4</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Seats</h3>
+      <p id="total-seats">500</p>
+    </div>
+
+    <div class="card">
+      <h3>Seats Filled</h3>
+      <p id="seats-filled">310</p>
+    </div>
+
+    <div class="card">
+      <h3>Seats Left</h3>
+      <p id="seats-left">190</p>
+    </div>
+
+    <!-- Event table -->
+    <h2>All Events</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Type</th>
+          <th>Date</th>
+          <th>Venue</th>
+          <th>Total Seats</th>
+          <th>Filled</th>
+          <th>Left</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <!-- Later, JavaScript will add new rows inside this tbody.
+           To add an event by hand, copy one whole <tr> ... </tr> -->
+      <tbody id="event-table-body">
+
+        <tr>
+          <td>Tech Fest 2026</td>
+          <td>Fest</td>
+          <td>15 Nov 2026</td>
+          <td>Main Auditorium</td>
+          <td>200</td>
+          <td>180</td>
+          <td>20</td>
+          <td class="open">Open</td>
+        </tr>
+
+        <tr>
+          <td>Web Development Workshop</td>
+          <td>Workshop</td>
+          <td>20 Nov 2026</td>
+          <td>Lab 3</td>
+          <td>100</td>
+          <td>60</td>
+          <td>40</td>
+          <td class="open">Open</td>
+        </tr>
+
+        <tr>
+          <td>AI Career Seminar</td>
+          <td>Seminar</td>
+          <td>25 Nov 2026</td>
+          <td>Seminar Hall</td>
+          <td>50</td>
+          <td>50</td>
+          <td>0</td>
+          <td class="full">Full</td>
+        </tr>
+
+        <tr>
+          <td>Coding Competition</td>
+          <td>Competition</td>
+          <td>01 Dec 2026</td>
+          <td>Block 34 Lab</td>
+          <td>150</td>
+          <td>20</td>
+          <td>130</td>
+          <td class="open">Open</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+    <a href="create-event.html" class="btn">+ Create New Event</a>
+
+  </div>
+
+</body>
+</html>

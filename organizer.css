@@ -1,0 +1,162 @@
+
+/* ORGANIZER PAGE CSS */
+
+/* Main organizer page */
+.organizer {
+    font-family: Arial;
+    background-color: whitesmoke;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Navigation bar */
+.organizer .navbar {
+    background-color: black;
+    padding: 15px;
+}
+
+.organizer .navbar span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.organizer .navbar a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.organizer .navbar a:hover {
+    color: orange;
+}
+
+/* Main content */
+.organizer .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Login box */
+.organizer .login-box {
+    width: 90%;
+    max-width: 350px;
+    background-color: white;
+    margin: 80px auto;
+    padding: 25px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+.organizer .login-box h1 {
+    text-align: center;
+}
+
+/* Form box */
+.organizer .form-box {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+
+/* Form labels */
+.organizer label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Form input fields */
+.organizer input,
+.organizer select,
+.organizer textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+/* Description box */
+.organizer textarea {
+    height: 100px;
+}
+
+/* Buttons */
+.organizer .btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.organizer .btn:hover {
+    background-color: darkorange;
+}
+
+/* Error message */
+.organizer .error-message {
+    color: red;
+    display: none;
+}
+
+/* Dashboard cards */
+.organizer .card {
+    display: inline-block;
+    width: 200px;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.organizer .card h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.organizer .card p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+/* Event table */
+.organizer table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.organizer th,
+.organizer td {
+    border: 1px solid lightgray;
+    padding: 10px;
+    text-align: left;
+}
+
+.organizer th {
+    background-color: lightgray;
+}
+
+/* Event status */
+.organizer .open {
+    color: green;
+    font-weight: bold;
+}
+
+.organizer .full {
+    color: red;
+    font-weight: bold;
+}
