@@ -6,7 +6,7 @@
     min-height: 100vh;
 }
 
-/* Navigation bar */
+
 .organizer .navbar {
     background-color: black;
     padding: 15px;
@@ -29,14 +29,14 @@
     color: orange;
 }
 
-/* Main content */
+
 .organizer .container {
     width: 90%;
     max-width: 900px;
     margin: 20px auto;
 }
 
-/* Login box */
+
 .organizer .login-box {
     width: 90%;
     max-width: 350px;
@@ -51,14 +51,14 @@
     text-align: center;
 }
 
-/* Form box */
+
 .organizer .form-box {
     background-color: white;
     padding: 25px;
     border: 1px solid lightgray;
 }
 
-/* Form labels */
+
 .organizer label {
     display: block;
     margin-top: 15px;
@@ -66,7 +66,7 @@
     font-weight: bold;
 }
 
-/* Form input fields */
+
 .organizer input,
 .organizer select,
 .organizer textarea {
@@ -77,12 +77,12 @@
     box-sizing: border-box;
 }
 
-/* Description box */
+
 .organizer textarea {
     height: 100px;
 }
 
-/* Buttons */
+
 .organizer .btn {
     background-color: orange;
     color: white;
@@ -99,13 +99,13 @@
     background-color: darkorange;
 }
 
-/* Error message */
+
 .organizer .error-message {
     color: red;
     display: none;
 }
 
-/* Dashboard cards */
+
 .organizer .card {
     display: inline-block;
     width: 200px;
@@ -129,7 +129,7 @@
     margin: 10px 0 0 0;
 }
 
-/* Event table */
+
 .organizer table {
     width: 100%;
     background-color: white;
@@ -147,7 +147,7 @@
     background-color: lightgray;
 }
 
-/* Event status */
+
 .organizer .open {
     color: green;
     font-weight: bold;
